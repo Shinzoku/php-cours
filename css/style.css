@@ -1,0 +1,17 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    background-color: white;
+    min-height: 100vh;
+}
+
+label[for="fruit_3"] {
+    font-weight: bold;
+}
+
+.custum-checkbox {
+    height: 3.8em;
+    overflow: scroll;
+}
