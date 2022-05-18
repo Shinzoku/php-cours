@@ -8,7 +8,7 @@ class Tag
     private $name;
     private $tasks;
 
-    public function __construct(int $id, string $name, ?array $tasks = [])
+    public function __construct(int $id, string $name, array $tasks = [])
     {
         $this->id = $id;
         $this->name = $name;
@@ -46,7 +46,7 @@ class Tag
     /**
      * Get the value of tasks
      */ 
-    public function getTasks(): ?array
+    public function getTasks(): array
     {
         return $this->tasks;
     }
@@ -56,7 +56,7 @@ class Tag
      *
      * @return  self
      */ 
-    public function setTasks(?array $tasks): self
+    public function setTasks(array $tasks): self
     {
         $this->tasks = $tasks;
 

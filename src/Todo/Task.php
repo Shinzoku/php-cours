@@ -19,7 +19,7 @@ class Task
     private $responsable;
     private $category;
 
-    public function __construct(int $id, string $name, string $description, DateTime $deadline, bool $done, ?array $tags = [], User $responsable, Category $category)
+    public function __construct(int $id, string $name, string $description, DateTime $deadline, bool $done, array $tags = [], User $responsable, Category $category)
     {
         $this->id = $id;
         $this->name = $name;
@@ -120,7 +120,7 @@ class Task
     /**
      * Get the value of tags
      */ 
-    public function getTags(): ?array
+    public function getTags(): array
     {
         return $this->tags;
     }
@@ -130,7 +130,7 @@ class Task
      *
      * @return  self
      */ 
-    public function setTags(?array $tags): self
+    public function setTags(array $tags): self
     {
         $this->tags = $tags;
 

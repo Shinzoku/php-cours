@@ -13,7 +13,7 @@ class User
     private $password;
     private $tasks;
 
-    public function __construct(int $id, string $firstname, string $lastname, string $email, string $password, ?array $tasks = [])
+    public function __construct(int $id, string $firstname, string $lastname, string $email, string $password, array $tasks = [])
     {
         $this->id = $id;
         $this->firstname = $firstname;
@@ -114,7 +114,7 @@ class User
     /**
      * Get the value of tasks
      */ 
-    public function getTasks(): ?array
+    public function getTasks(): array
     {
         return $this->tasks;
     }
@@ -124,7 +124,7 @@ class User
      *
      * @return  self
      */ 
-    public function setTasks(?array $tasks): self
+    public function setTasks(array $tasks): self
     {
         $this->tasks = $tasks;
 
