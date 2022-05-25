@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-// Category
+// Tag
 // - id
 // - name / titre
 // - description
@@ -8,14 +8,16 @@
 // - created_at
 // - created_by
 // - edited_at
+// - edited_by
 // - deleted_at
+// - deleted_by
 
 namespace App\Blog;
 
 use App\Blog\ANamedObject;
 use App\Blog\Traits\Articlable;
 
-class Category extends ANamedObject
+class Tag extends ANamedObject
 {
     use Articlable;
 
